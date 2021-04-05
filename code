@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    int temp,min,max,sum=0,count=0;
+    double average;
+    if(cin>>max){
+        count++;
+        sum=sum+max;
+        min=max;//initially, min and max are the same
+    }
+ 
+ /*temp holds input temporarily*/
+    while(cin>>temp){
+        count++;
+        sum=sum+temp;
+        if(temp>=max){
+            max=temp;}
+        if(temp<=min){
+            min=temp;
+
+        }
+    cout<<"max:"<<max<<endl;
+    cout<<"min:"<<min<<endl;
+    cout<<"sum:"<<sum<<endl;
+    cout<<"count:"<<count<<endl;
+    
+    average=sum/count;
+    cout<<"average:"<<average<<endl;
+    }
+
+    return 0;
+}
