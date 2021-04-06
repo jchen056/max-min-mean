@@ -11,6 +11,7 @@ int main()
         if(temp>min1 && temp<=min2)
             min2=temp;
         if (temp<=min1)
+            min2=min1;
             min1=temp;
     }
     
